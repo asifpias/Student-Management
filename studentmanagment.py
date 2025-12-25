@@ -1,7 +1,9 @@
 import streamlit as st
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
+from google.oauth2.service_account import Credentials
+from datetime import datetime
+import time
 
 # --- GOOGLE SHEETS LINKS ---
 IELTS_SHEET_LINK = "https://docs.google.com/spreadsheets/d/1rxO0DSqjaevC5rvuCpwU0Z94jTZZ_PVt72Vnu44H5js/edit?usp=sharing"
